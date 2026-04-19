@@ -1,11 +1,29 @@
 aid: aleris
-url: 
+url: >-
   https://raw.githubusercontent.com/api-evangelist/aleris/refs/heads/main/apis.yml
-modified: '2026-03-23'
+modified: '2026-04-19'
+description: >-
+  Aleris was a global producer of rolled aluminum products serving the
+  aerospace, automotive, building and construction, and other industrial
+  end-use markets. Founded as IMCO Recycling and later renamed Aleris
+  International, the company operated manufacturing plants across North
+  America, Europe, and Asia. Aleris was acquired by Novelis Inc. (a subsidiary
+  of Hindalco Industries) on April 14, 2020 for approximately $2.8 billion.
+  The company's primary product lines included aluminum sheet, plate, and
+  engineered products for demanding applications such as aerospace structures
+  and automotive body panels. As a manufacturing-focused business, Aleris did
+  not maintain a public developer API program, but engaged in B2B EDI
+  integrations with major customers and suppliers across its supply chain.
 apis: []
 common:
   - type: Website
     url: https://www.aleris.com
-description: >-
-  Aleris is a global producer of rolled aluminum products serving the aerospace, automotive,
-  building and construction, and other industrial end-use markets.
+  - type: Website
+    url: https://novelis.com
+tags:
+  - Aluminum
+  - Manufacturing
+  - Aerospace
+  - Automotive
+  - Industrial
+  - Materials
