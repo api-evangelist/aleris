@@ -1,3 +1,4 @@
+name: Aleris
 aid: aleris
 deliveryModel:
   model: unknown
@@ -25,7 +26,8 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aleris.png
 url: >-
   https://raw.githubusercontent.com/api-evangelist/aleris/refs/heads/main/apis.yml
-modified: '2026-04-19'
+created: '2026-03-24'
+modified: '2026-09-04'
 description: >-
   Aleris was a global producer of rolled aluminum products serving the
   aerospace, automotive, building and construction, and other industrial
@@ -38,12 +40,21 @@ description: >-
   and automotive body panels. As a manufacturing-focused business, Aleris did
   not maintain a public developer API program, but engaged in B2B EDI
   integrations with major customers and suppliers across its supply chain.
+  The Aleris brand has since been absorbed into Novelis and aleris.com no
+  longer serves a website.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
 apis: []
 common:
   - type: DomainSecurity
     url: security/aleris-domain-security.yml
-  - type: Website
-    url: https://www.aleris.com
+  - type: LLMsTxt
+    url: llms/aleris-llms.txt
+  - type: Plans
+    url: plans/aleris-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/aleris-rate-limits.yml
   - type: Website
     url: https://novelis.com
 tags:
@@ -53,3 +64,25 @@ tags:
   - Automotive
   - Industrial
   - Materials
+x-enrichment:
+  date: '2026-09-04'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    Aleris ceased to exist as an independent company when Novelis completed its acquisition on
+    2020-04-14; aleris.com still resolves to 3.220.245.86 but no longer answers HTTP on 443 or 80,
+    so there is no site, no developer portal and no contract to read on any Aleris host.
+  evidence:
+    - url: https://www.aleris.com/
+      status: 0
+    - url: https://aleris.com/.well-known/agent-card.json
+      status: 0
+    - url: https://novelis.com/.well-known/apis.json
+      status: 404
+    - url: https://novelis.com/llms.txt
+      status: 200
+  checked: '2026-09-04'
