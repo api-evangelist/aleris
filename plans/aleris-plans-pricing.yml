@@ -1,0 +1,11 @@
+generated: '2026-09-04'
+method: searched
+source: https://novelis.com/
+note: >-
+  Aleris published no API and therefore no API plans or pricing tiers. The company was acquired
+  by Novelis Inc. on 2020-04-14 and aleris.com no longer serves a website (connection timeout on
+  443 and 80, probed 2026-09-04), so there is no pricing page to read. No developer program,
+  self-serve signup, or API price list was found for this company on any surface. This is a
+  recorded zero, not an unchecked field.
+plan_count: 0
+plans: []

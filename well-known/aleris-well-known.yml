@@ -1,0 +1,73 @@
+generated: '2026-09-04'
+method: probed
+source: live GET of the named /.well-known/ path list on every host this record knows
+note: >-
+  Recorded absence. Aleris ceased to exist as an independent company when Novelis Inc.
+  completed its acquisition on 2020-04-14; aleris.com still resolves in DNS
+  (3.220.245.86) but no longer answers on port 80 or 443, so every probe against it
+  returns a connection timeout rather than an HTTP status. novelis.com — the surviving
+  corporate host carried on this record as the successor Website — answers, and every
+  named path missed there. NO WellKnown or SecurityTxt pointer is emitted: nothing on
+  either host returned a document. Documents served by novelis.com would in any case
+  belong to Novelis, not to Aleris.
+hit_count: 0
+path_echo_control:
+  novelis.com: passed
+  aleris.com: unreachable
+hosts:
+- host: https://aleris.com
+  reachable: false
+  note: >-
+    DNS A record 3.220.245.86; TCP connect times out on both 443 and 80. status 0 below
+    means "no HTTP response was received", not "the server answered 0".
+  documents:
+  - {path: /.well-known/security.txt, status: 0, file: null}
+  - {path: /.well-known/openid-configuration, status: 0, file: null}
+  - {path: /.well-known/oauth-authorization-server, status: 0, file: null}
+  - {path: /.well-known/oauth-protected-resource, status: 0, file: null}
+  - {path: /.well-known/api-catalog, status: 0, file: null}
+  - {path: /.well-known/ai-plugin.json, status: 0, file: null}
+  - {path: /.well-known/ucp.json, status: 0, file: null}
+  - {path: /.well-known/acp.json, status: 0, file: null}
+  - {path: /.well-known/aauth-resource.json, status: 0, file: null}
+  - {path: /.well-known/apis.json, status: 0, file: null}
+  - {path: /apis.json, status: 0, file: null}
+  - {path: /apis.yml, status: 0, file: null}
+  - {path: /.well-known/agent-card.json, status: 0, file: null}
+  - {path: /.well-known/agent.json, status: 0, file: null}
+  - {path: /.well-known/aleris-negative-control-7f3ab91c.json, status: 0, file: null}
+- host: https://www.aleris.com
+  reachable: false
+  note: same unreachable host as the apex; TCP connect times out on 443 and 80.
+  documents:
+  - {path: /.well-known/security.txt, status: 0, file: null}
+  - {path: /.well-known/openid-configuration, status: 0, file: null}
+  - {path: /.well-known/oauth-authorization-server, status: 0, file: null}
+  - {path: /.well-known/oauth-protected-resource, status: 0, file: null}
+  - {path: /.well-known/api-catalog, status: 0, file: null}
+  - {path: /.well-known/ai-plugin.json, status: 0, file: null}
+  - {path: /.well-known/ucp.json, status: 0, file: null}
+- host: https://novelis.com
+  reachable: true
+  note: >-
+    Successor corporate host (Novelis Inc., the acquirer). Probed for completeness only —
+    a document here would be Novelis property, not an Aleris surface. Nothing hit.
+    /.well-known/openid-configuration, /oauth-authorization-server,
+    /oauth-protected-resource and /api-catalog answer 301 to the same path with a
+    trailing slash, which then returns a 404 WordPress error page (~128KB of HTML).
+  documents:
+  - {path: /.well-known/security.txt, status: 404, file: null}
+  - {path: /.well-known/openid-configuration, status: 404, file: null}
+  - {path: /.well-known/oauth-authorization-server, status: 404, file: null}
+  - {path: /.well-known/oauth-protected-resource, status: 404, file: null}
+  - {path: /.well-known/api-catalog, status: 404, file: null}
+  - {path: /.well-known/ai-plugin.json, status: 404, file: null}
+  - {path: /.well-known/ucp.json, status: 404, file: null}
+  - {path: /.well-known/acp.json, status: 404, file: null}
+  - {path: /.well-known/aauth-resource.json, status: 404, file: null}
+  - {path: /.well-known/apis.json, status: 404, file: null}
+  - {path: /apis.json, status: 404, file: null}
+  - {path: /apis.yml, status: 404, file: null}
+  - {path: /.well-known/agent-card.json, status: 404, file: null}
+  - {path: /.well-known/agent.json, status: 404, file: null}
+  - {path: /.well-known/aleris-negative-control-7f3ab91c.json, status: 404, file: null}

@@ -1,0 +1,10 @@
+generated: '2026-09-04'
+method: searched
+source: https://novelis.com/
+note: >-
+  Aleris published no API, so there are no rate limits, no rate-limit response headers, and no
+  documented exhaustion status code to record. aleris.com does not answer HTTP (probed
+  2026-09-04) and no developer documentation exists on any surface associated with this company.
+  Recorded zero, not an unchecked field.
+limit_count: 0
+rate_limits: []

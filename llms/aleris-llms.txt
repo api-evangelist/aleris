@@ -1,0 +1,42 @@
+# Aleris
+
+> Aleris was a global producer of rolled aluminum products for the aerospace, automotive,
+> building and construction, and other industrial end-use markets. It no longer exists as an
+> independent company: Novelis Inc. (a subsidiary of Hindalco Industries) completed its
+> acquisition of Aleris Corporation on 2020-04-14 for approximately $2.8 billion. Aleris
+> published no developer program, no API documentation, and no machine-readable API contract,
+> and its corporate domain no longer serves a website.
+
+## Status
+
+- Defunct as an independent brand. Acquired by Novelis Inc., completed 2020-04-14.
+- aleris.com still resolves in DNS but does not answer HTTP on port 80 or 443 (probed 2026-09-04).
+- No OpenAPI, AsyncAPI, GraphQL, gRPC/Protobuf, WSDL, MCP server or A2A agent card was found on
+  any host associated with this record.
+- No /.well-known/ discovery document, no /apis.json, and no llms.txt on any Aleris host.
+- Manufacturing-sector B2B integration at this company ran through EDI with named trading
+  partners, which is a private bilateral surface and not a published API.
+
+## Successor
+
+- [Novelis Inc.](https://novelis.com) — the acquirer and the surviving corporate entity. Any API,
+  llms.txt or discovery document served from novelis.com belongs to Novelis, not to Aleris, and is
+  deliberately not claimed on this record.
+
+## Profile
+
+- [Aleris on APIs.io](https://apis.io/aleris/) — the API Evangelist profile of this company.
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/aleris/refs/heads/main/apis.yml) — the APIs.json index for this record.
+
+## Artifacts in this repository
+
+- [security/aleris-domain-security.yml](https://raw.githubusercontent.com/api-evangelist/aleris/refs/heads/main/security/aleris-domain-security.yml) — probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture for aleris.com and novelis.com.
+- [well-known/aleris-well-known.yml](https://raw.githubusercontent.com/api-evangelist/aleris/refs/heads/main/well-known/aleris-well-known.yml) — the recorded /.well-known/ probe, all misses.
+- [plans/aleris-plans-pricing.yml](https://raw.githubusercontent.com/api-evangelist/aleris/refs/heads/main/plans/aleris-plans-pricing.yml) — no published API plans.
+- [rate-limits/aleris-rate-limits.yml](https://raw.githubusercontent.com/api-evangelist/aleris/refs/heads/main/rate-limits/aleris-rate-limits.yml) — no published rate limits.
+
+## Note for agents
+
+There is nothing here to call. Do not synthesize an Aleris API base URL, endpoint, or credential —
+none has ever been published. If you need an aluminum-industry counterparty for this business,
+the successor entity is Novelis.
