@@ -64,13 +64,91 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Aleris was a global producer of rolled aluminum products serving the aerospace, automotive, building and construction, and other industrial end-use markets. Founded as IMCO Recycling and later renamed Aleris International, the company operated manufacturing plants across North America, Europe, and Asia.
+Aleris was a global producer of rolled aluminum products serving the aerospace, automotive, building and construction, and other industrial end-use markets. Founded as IMCO Recycling and later renamed Aleris International, the company operated manufacturing plants across North America, Europe, and Asia. Aleris was acquired by Novelis Inc. (a subsidiary of Hindalco Industries) on April 14, 2020 for approximately $2.8 billion. The company's primary product lines included aluminum sheet, plate, and engineered products for demanding applications such as aerospace structures and automotive body panels. As a manufacturing-focused business, Aleris did not maintain a public developer API program, but engaged in B2B EDI integrations with major customers and suppliers across its supply chain. The Aleris brand has since been absorbed into Novelis and aleris.com no longer serves a website.
 
-Aleris was acquired by Novelis Inc. (a subsidiary of Hindalco Industries) on April 14, 2020 for approximately $2.8 billion. Novelis divested certain Aleris plants in Lewisport, Kentucky and Duffel, Belgium to satisfy regulatory conditions.
+**Areas:** Aluminum · Manufacturing · Aerospace · Automotive · Industrial · Materials
 
-The company's primary product lines included aluminum sheet, plate, and engineered products for demanding applications such as aerospace structures and automotive body panels. As a manufacturing-focused business, Aleris did not maintain a public developer API program, but engaged in B2B EDI integrations with major customers and suppliers across its supply chain.
+## Aleris on APIs.io
 
-## Links
+Everything profiled for Aleris is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/aleris/](https://apis.io/providers/aleris/)** — or go straight to one of the APIs or properties below.
 
-- [Aleris Website](https://www.aleris.com)
-- [Novelis (Acquirer)](https://novelis.com)
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Aleris Domain Security](https://apis.io/security/aleris/aleris-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Aleris Plans Pricing](https://apis.io/plans/aleris/aleris-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Aleris Rate Limits](https://apis.io/rate-limits/aleris/aleris-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://novelis.com)
+
+## API Evangelist rating
+
+**Kin Score 4.2** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/aleris/](https://apis.io/providers/aleris/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Aleris: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/aleris/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
